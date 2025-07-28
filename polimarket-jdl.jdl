@@ -51,7 +51,7 @@ service all with serviceClass
 
 relationship OneToMany {
   AreaDeNegocio{vendedores} to Vendedor{areaDeNegocio(nombre)}
-  Proveedor{productos} to Producto{proveedor}
+  Proveedor{productos} to Producto{proveedor(nombre)}
   Vendedor{clientes} to Cliente{vendedor(nombre)}
   Vendedor{tareas} to Tarea{vendedor(nombre)}
   Tarea{productos} to Producto{tarea(descripcion)}
@@ -60,5 +60,5 @@ relationship OneToMany {
   Producto{entregas} to Entrega{producto(nombre)}
   Producto{inventarios} to Inventario{producto(nombre)}
   Producto{movimientos} to MovimientoStock{producto(nombre)}
-  Inventario{movimientos} to MovimientoStock{inventario}
+  Inventario{movimientos} to MovimientoStock{inventario(cantidad)}
 }
