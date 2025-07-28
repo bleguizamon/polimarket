@@ -1,0 +1,28 @@
+{
+  "polimarketApp": {
+    "vendedor": {
+      "home": {
+        "title": "Vendedors",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Vendedor",
+        "createOrEditLabel": "Crear o editar Vendedor",
+        "notFound": "Ningún Vendedors encontrado"
+      },
+      "created": "Un nuevo Vendedor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Vendedor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Vendedor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Vendedor {{ id }}?"
+      },
+      "detail": {
+        "title": "Vendedor"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "autorizado": "Autorizado",
+      "clientes": "Clientes",
+      "tareas": "Tareas",
+      "areaDeNegocio": "Area De Negocio"
+    }
+  }
+}

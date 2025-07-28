@@ -7,7 +7,16 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "areaDeNegocio": "Area De Negocio",
+        "proveedor": "Proveedor",
+        "vendedor": "Vendedor",
+        "cliente": "Cliente",
+        "producto": "Producto",
+        "tarea": "Tarea",
+        "entrega": "Entrega",
+        "inventario": "Inventario",
+        "movimientoStock": "Movimiento Stock"
       },
       "account": {
         "main": "Cuenta",

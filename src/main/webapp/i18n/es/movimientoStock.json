@@ -1,0 +1,29 @@
+{
+  "polimarketApp": {
+    "movimientoStock": {
+      "home": {
+        "title": "Movimiento Stocks",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Movimiento Stock",
+        "createOrEditLabel": "Crear o editar Movimiento Stock",
+        "notFound": "Ningún Movimiento Stocks encontrado"
+      },
+      "created": "Un nuevo Movimiento Stock ha sido creado con el identificador {{ param }}",
+      "updated": "Un Movimiento Stock ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Movimiento Stock ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Movimiento Stock {{ id }}?"
+      },
+      "detail": {
+        "title": "Movimiento Stock"
+      },
+      "id": "ID",
+      "fecha": "Fecha",
+      "tipo": "Tipo",
+      "cantidad": "Cantidad",
+      "referencia": "Referencia",
+      "producto": "Producto",
+      "inventario": "Inventario"
+    }
+  }
+}

@@ -14,7 +14,7 @@
     "devDatabaseType": "h2Disk",
     "enableHibernateCache": true,
     "enableTranslation": true,
-    "entities": [],
+    "entities": ["AreaDeNegocio", "Proveedor", "Vendedor", "Cliente", "Producto", "Tarea", "Entrega", "Inventario", "MovimientoStock"],
     "feignClient": null,
     "jhipsterVersion": "8.11.0",
     "jwtSecretKey": "Mjg0YzdkMzUzYmFjNGIwNmZjNzgxY2I1N2Y0MTJkNzFhZjhjNWQ2NDU5ZjE2ZTk4MGM2NjQ2YzYxNzdmZTI4MjgxODEzODI5NmQ3MjczMTZkMGFiMDJmN2VlMWUyYTcwYjlkZjFhODllYmEwNTU0MzQ5YzhkNzI2NzA4ZDhkYjc=",

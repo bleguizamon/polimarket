@@ -1,0 +1,26 @@
+{
+  "polimarketApp": {
+    "areaDeNegocio": {
+      "home": {
+        "title": "Area De Negocios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Area De Negocio",
+        "createOrEditLabel": "Crear o editar Area De Negocio",
+        "notFound": "Ningún Area De Negocios encontrado"
+      },
+      "created": "Un nuevo Area De Negocio ha sido creado con el identificador {{ param }}",
+      "updated": "Un Area De Negocio ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Area De Negocio ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Area De Negocio {{ id }}?"
+      },
+      "detail": {
+        "title": "Area De Negocio"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "descripcion": "Descripcion",
+      "vendedores": "Vendedores"
+    }
+  }
+}
