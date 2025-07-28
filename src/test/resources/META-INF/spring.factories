@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = \
+    co.edu.poligran.polimarket.config.\
+    SqlTestContainersSpringContextCustomizerFactory
