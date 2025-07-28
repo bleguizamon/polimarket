@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const BrandIcon = props => (
   <div {...props} className="brand-icon">
-    <img src="content/images/logo-jhipster.png" alt="Logo" />
+    {/* Imagen de JHipster eliminada. Puedes agregar aquí el logo de Polimarket si lo tienes. */}
   </div>
 );
 

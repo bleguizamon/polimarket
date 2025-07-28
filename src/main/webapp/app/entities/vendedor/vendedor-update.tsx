@@ -10,6 +10,8 @@ import { getEntities as getAreaDeNegocios } from 'app/entities/area-de-negocio/a
 import { createEntity, getEntity, reset, updateEntity } from './vendedor.reducer';
 
 export const VendedorUpdate = () => {
+  const account = useAppSelector(state => state.authentication.account);
+  const isAdmin = account && account.authorities && account.authorities.includes('ROLE_ADMIN');
   const dispatch = useAppDispatch();
 
   const navigate = useNavigate();
@@ -111,6 +113,8 @@ export const VendedorUpdate = () => {
                 data-cy="autorizado"
                 check
                 type="checkbox"
+                readOnly={!isAdmin}
+                disabled={!isAdmin}
               />
               <ValidatedField
                 id="vendedor-areaDeNegocio"

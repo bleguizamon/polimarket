@@ -44,10 +44,6 @@ entity MovimientoStock {
   cantidad Integer
   referencia String
 }
-paginate all with pagination
-filter all
-
-service all with serviceClass
 
 relationship OneToMany {
   AreaDeNegocio{vendedores} to Vendedor{areaDeNegocio(nombre)}
@@ -62,3 +58,7 @@ relationship OneToMany {
   Producto{movimientos} to MovimientoStock{producto(nombre)}
   Inventario{movimientos} to MovimientoStock{inventario(cantidad)}
 }
+
+paginate * with pagination
+service all with serviceClass
+filter *
