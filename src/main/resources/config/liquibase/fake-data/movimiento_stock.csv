@@ -1,0 +1,12 @@
+id;fecha;tipo;cantidad;referencia
+1;2025-07-01 09:00:00;Entrada;50;Compra Proveedor A
+2;2025-07-02 11:30:00;Salida;20;Venta Cliente X
+3;2025-07-03 13:15:00;Entrada;70;Compra Proveedor B
+4;2025-07-04 15:45:00;Salida;30;Venta Cliente Y
+5;2025-07-05 10:20:00;Entrada;40;Devolución
+6;2025-07-06 12:00:00;Salida;25;Ajuste Inventario
+7;2025-07-07 14:30:00;Entrada;60;Compra Proveedor C
+8;2025-07-08 16:10:00;Salida;35;Venta Cliente Z
+9;2025-07-09 08:50:00;Entrada;80;Transferencia
+10;2025-07-10 10:40:00;Salida;15;Ajuste Inventario
+

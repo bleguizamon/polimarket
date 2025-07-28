@@ -26,6 +26,7 @@
       "relationshipType": "one-to-many"
     },
     {
+      "otherEntityField": "nombre",
       "otherEntityName": "vendedor",
       "otherEntityRelationshipName": "clientes",
       "relationshipName": "vendedor",

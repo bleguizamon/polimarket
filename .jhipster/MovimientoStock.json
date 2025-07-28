@@ -26,6 +26,7 @@
   "pagination": "pagination",
   "relationships": [
     {
+      "otherEntityField": "nombre",
       "otherEntityName": "producto",
       "otherEntityRelationshipName": "movimientos",
       "relationshipName": "producto",

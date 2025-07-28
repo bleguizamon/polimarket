@@ -1,0 +1,12 @@
+id;descripcion;estado
+1;Preparar pedido;Pendiente
+2;Revisar inventario;En proceso
+3;Contactar proveedor;Completada
+4;Actualizar precios;Pendiente
+5;Enviar factura;Completada
+6;Recepcionar mercancía;En proceso
+7;Programar entrega;Pendiente
+8;Verificar pago;Completada
+9;Registrar devolución;En proceso
+10;Confirmar recepción;Completada
+

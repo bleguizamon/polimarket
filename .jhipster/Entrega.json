@@ -18,6 +18,7 @@
   "pagination": "pagination",
   "relationships": [
     {
+      "otherEntityField": "descripcion",
       "otherEntityName": "tarea",
       "otherEntityRelationshipName": "entregas",
       "relationshipName": "tarea",
@@ -25,6 +26,7 @@
       "relationshipType": "many-to-one"
     },
     {
+      "otherEntityField": "nombre",
       "otherEntityName": "cliente",
       "otherEntityRelationshipName": "entregas",
       "relationshipName": "cliente",
@@ -32,6 +34,7 @@
       "relationshipType": "many-to-one"
     },
     {
+      "otherEntityField": "nombre",
       "otherEntityName": "producto",
       "otherEntityRelationshipName": "entregas",
       "relationshipName": "producto",

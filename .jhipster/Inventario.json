@@ -25,6 +25,7 @@
       "relationshipType": "one-to-many"
     },
     {
+      "otherEntityField": "nombre",
       "otherEntityName": "producto",
       "otherEntityRelationshipName": "inventarios",
       "relationshipName": "producto",

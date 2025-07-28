@@ -47,6 +47,7 @@
       "relationshipType": "many-to-one"
     },
     {
+      "otherEntityField": "descripcion",
       "otherEntityName": "tarea",
       "otherEntityRelationshipName": "productos",
       "relationshipName": "tarea",
