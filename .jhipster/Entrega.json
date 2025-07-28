@@ -1,0 +1,44 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043119"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Entrega",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "tarea",
+      "otherEntityRelationshipName": "entregas",
+      "relationshipName": "tarea",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "entregas",
+      "relationshipName": "cliente",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "entregas",
+      "relationshipName": "producto",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,46 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043115"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "autorizado",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Vendedor",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "vendedor",
+      "relationshipName": "clientes",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "tarea",
+      "otherEntityRelationshipName": "vendedor",
+      "relationshipName": "tareas",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "areaDeNegocio",
+      "otherEntityRelationshipName": "vendedores",
+      "relationshipName": "areaDeNegocio",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

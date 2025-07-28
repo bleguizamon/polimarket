@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043114"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Proveedor",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "proveedor",
+      "relationshipName": "productos",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

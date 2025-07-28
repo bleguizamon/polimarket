@@ -1,0 +1,59 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043117"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cantidadDisponible",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Producto",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "entrega",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "entregas",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "inventario",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "inventarios",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "movimientoStock",
+      "otherEntityRelationshipName": "producto",
+      "relationshipName": "movimientos",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "proveedor",
+      "otherEntityRelationshipName": "productos",
+      "relationshipName": "proveedor",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "tarea",
+      "otherEntityRelationshipName": "productos",
+      "relationshipName": "tarea",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

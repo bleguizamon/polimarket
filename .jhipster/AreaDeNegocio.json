@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043113"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "AreaDeNegocio",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "vendedor",
+      "otherEntityRelationshipName": "areaDeNegocio",
+      "relationshipName": "vendedores",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

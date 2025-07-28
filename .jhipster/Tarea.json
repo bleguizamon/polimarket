@@ -1,0 +1,44 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043118"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Tarea",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "tarea",
+      "relationshipName": "productos",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "entrega",
+      "otherEntityRelationshipName": "tarea",
+      "relationshipName": "entregas",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "vendedor",
+      "otherEntityRelationshipName": "tareas",
+      "relationshipName": "vendedor",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

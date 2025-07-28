@@ -1,0 +1,64 @@
+entity AreaDeNegocio {
+  nombre String required,
+  descripcion String
+}
+
+entity Proveedor {
+  nombre String required,
+  telefono String
+}
+
+entity Vendedor {
+  nombre String required,
+  autorizado Boolean
+}
+
+entity Cliente {
+  nombre String required,
+  contacto String
+}
+
+entity Producto {
+  nombre String required,
+  cantidadDisponible Integer
+}
+
+entity Tarea {
+  descripcion String,
+  estado String
+}
+
+entity Entrega {
+  fecha Instant,
+  estado String
+}
+
+entity Inventario {
+  cantidad Integer,
+  ubicacion String
+}
+
+entity MovimientoStock {
+  fecha Instant,
+  tipo String,
+  cantidad Integer,
+  referencia String
+}
+paginate all with pagination
+filter all
+
+service all with serviceClass
+
+relationship OneToMany {
+  AreaDeNegocio{vendedores} to Vendedor{areaDeNegocio(nombre)}
+  Proveedor{productos} to Producto{proveedor}
+  Vendedor{clientes} to Cliente{vendedor}
+  Vendedor{tareas} to Tarea{vendedor}
+  Tarea{productos} to Producto{tarea}
+  Tarea{entregas} to Entrega{tarea}
+  Cliente{entregas} to Entrega{cliente}
+  Producto{entregas} to Entrega{producto}
+  Producto{inventarios} to Inventario{producto}
+  Producto{movimientos} to MovimientoStock{producto}
+  Inventario{movimientos} to MovimientoStock{inventario}
+}

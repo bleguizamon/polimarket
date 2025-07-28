@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043116"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "contacto",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Cliente",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "entrega",
+      "otherEntityRelationshipName": "cliente",
+      "relationshipName": "entregas",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "vendedor",
+      "otherEntityRelationshipName": "clientes",
+      "relationshipName": "vendedor",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20250728043121"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "tipo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "referencia",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "MovimientoStock",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "movimientos",
+      "relationshipName": "producto",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "inventario",
+      "otherEntityRelationshipName": "movimientos",
+      "relationshipName": "inventario",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
